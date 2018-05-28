@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="emvparser.luis.clip.emvparser.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/holo_orange_dark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="56dp">
+
+        <TextView
+            android:id="@+id/greetings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/greetings"
+            android:padding="10sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/first_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:textSize="15sp"
+            android:text="@string/intro"
+            android:textColor="@color/colorGray"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="@string/explain"
+            android:textAlignment="center"
+            android:textColor="@color/colorGray"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/check_it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/check_it"
+            android:textColor="@color/colorGray"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            />
+        <Button
+            android:id="@+id/example_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:text="Chipcard 1"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:id="@+id/example_2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:text="Chipcard 2"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:id="@+id/input_tlv"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textSize="12sp"
+            />
+
+        <Button
+            android:id="@+id/whatever"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:text="Decode"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

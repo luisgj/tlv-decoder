@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EMVParser</string>
+    <string name="action_settings">Settings</string>
+    <string name="greetings">Greetings, Human!</string>
+    <string name="intro">This is a demonstration of a simple TLV decoder used to parse EMV transaction data.</string>
+    <string name="explain">You can decode the first two examples or input your own.</string>
+    <string name="check_it">Check it out!</string>
+</resources>
